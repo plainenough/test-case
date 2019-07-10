@@ -4,9 +4,9 @@
 def loadFile(filename):
     myResult = __import__(filename)
     if myResult.main() == 'Hello world':
-        return False
-    else:
         return True
+    else:
+        return False
 
 
 def args():
