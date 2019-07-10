@@ -17,15 +17,14 @@ def args():
     import argparse
     parser = argparse.ArgumentParser(description='Test 1')
     parser.add_argument("filename", help='Example: Joe schmoe -> jschmoe',
-            type=str)
+                        type=str)
     return parser.parse_args()
-
 
 
 if __name__ == '__main__':
     args = args()
     result = loadFile(args.filename)
-    if result == True:
+    if result:
         print("Test passed")
     else:
         print("Test Failed")
