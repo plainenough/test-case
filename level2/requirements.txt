@@ -1,0 +1,7 @@
+1) Your file needs to be committed as your name: first initial last name.
+   EXAMPLE: Derrick Walton ----> dwalton.py
+2) You need to start with the level1 file.
+3) Your program needs to pass the test.py by running:
+   ./test.py dwalton
+4) Your program needs to return: ('Hello world', 'HELLO WORLD', 'hello world')
+5) Your program should print the varients when executed by itself.
