@@ -17,7 +17,7 @@ def loadFile(filename):
     '''This will load the values from the target code for test setup
     '''
     myResult = __import__(filename)
-    (regular, upper, lower) =  myResult.main()    
+    (regular, upper, lower) = myResult.main()
     return regular, upper, lower
 
 
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     results = {}
     (test1, test2, test3) = loadFile(args.filename)
     for mytest in testReg(test1), testUpper(test2), testLower(test3):
-        count += 1 
+        count += 1
         results["test{0}".format(count)] = mytest
     for test in results:
         print("{0} - {1}".format(test, results[test]))
