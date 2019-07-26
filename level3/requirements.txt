@@ -1,12 +1,12 @@
 1) Your file needs to be committed as your name: first initial last name.
    EXAMPLE: Derrick Walton ----> dwalton.py
 2) You need to start with the level2 file.
-3) Your program needs to pass the test.py by running:
-   ./test.py dwalton
-4) Your program should except an argument called 'lookup_key' with accepted
-   values of [1, 2, 3, 4, 5]
+3) Your program needs to pass all of the tests.
+   py.test -k dwalton -v
+4) Main should return 5 items.
 5) Your program needs to return a selection from: 
    ['Hello world', 'HELLO WORLD', 'hello world', 'hellO worlD', 'Hello World']
    HINT: This order is important.
-6) You need to populate this list on the fly.
-7) Your program should print the targeted string when ran by itself.
+6) You need to populate this list individually on the fly.
+7) You will need to install pytest on your machine.
+8) Your program should print the targeted string when ran by itself.
