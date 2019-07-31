@@ -3,7 +3,7 @@ import pytest
 
 userlist = ['dwalton', 'kgibson', 'adelacruz',
             'dpfister', 'ohuweih', 'jearl',
-            'mflederbach']
+            'mflederbach', 'ktilley']
 
 
 @pytest.mark.parametrize("filename", userlist)
