@@ -31,7 +31,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
+        if: ${{ github.event_name == 'repository_dispatch' }}
         run: |
+          echo ${{ github.event.client_payload.environment }}
           echo ${{ github.event_name }}
           echo Add other actions to build,
           echo test, and deploy your project.
