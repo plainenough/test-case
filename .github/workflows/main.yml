@@ -31,7 +31,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        if: ${{ github.event_name == 'repository_dispatch' }}
+        if: ${{ github.event_name == 'repository_dispatch' && github.event.client_payload.environment == 'staging' }}
         run: |
           echo ${{ github.event.client_payload.environment }}
           echo ${{ github.event_name }}
